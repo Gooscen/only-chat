@@ -109,7 +109,7 @@ export default function ChatWindow({ onMenuClick }: ChatWindowProps) {
               </div>
             ) : (
               <img
-                src={displayAvatar}
+                src={displayAvatar ?? undefined}
                 alt={displayName}
                 className="w-10 h-10 rounded-full object-cover"
               />
